@@ -6,6 +6,7 @@
     <li><h2><%= story.title %></h2></li>
     <li><h2><%= story.image %></h2><br>
     <h2><%= story.intro %></h2></li>
+     <li><%= link_to story.title,  story_path(story) %></li>
   <% end %>
   <% else %>
     <p>No stories yet</p>
